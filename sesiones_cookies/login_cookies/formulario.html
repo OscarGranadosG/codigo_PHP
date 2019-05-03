@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+
+<h1>INTRODUCE TUS DATOS</h1>
+
+<form action="<?php echo $_SERVER['PHP_SELF']; ?> " method="post"> <!--CARGA DE LA PROPIA PAGINA-->
+
+<table>
+<tr>
+<td class="izq">
+Login: </td><td class="der"><input type="text" name="login"></td></tr>
+<tr><td class="izq">Password: <td class="der"><input type="password" name="password"></td></tr>
+<tr><td colspan="2"><input type="submit" name="enviar" value="LOGIN"></td></tr></table>
+
+</form>
+</body>
+</html>

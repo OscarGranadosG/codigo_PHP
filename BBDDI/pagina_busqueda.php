@@ -25,7 +25,10 @@
 	
 	mysqli_select_db($conexion, $db_nombre) or die ("No se encuentra la base de datos"); // para especificar la base de datos que queremos conectar
 	
-	$consulta="SELECT * FROM PRODUCTOS WHERE NOMBREARTÍCULO LIKE '%$busqueda%'"; 
+//	$consulta="SELECT * FROM PRODUCTOS WHERE NOMBREARTÍCULO LIKE '%$busqueda%'"; 
+	$consulta="SELECT * FROM PRODUCTOS WHERE NOMBREARTÍCULO = '$busqueda'";  //con Inyeccion sql
+	
+	echo "$consulta<br><br>";
 	
 	$resultados=mysqli_query($conexion, $consulta); // para realizar la query y lo guarda en $resultados
 	
